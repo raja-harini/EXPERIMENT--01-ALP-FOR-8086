@@ -1,12 +1,8 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
-
-
-
-
+```
+Name : HARINI R
+Roll no: 212223100010
+```
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
@@ -76,28 +72,74 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations
-
-## Addition  of 8 bit ALP 
-
-
-
-## Output  
+```
+ORG 100h      
+MOV Ax, 4001h   
+MOV Bx, 2032h   
+add  Ax, Bx 
+  
+MOV [2000h], Ax 
  
-## Subtraction   of 8 bit numbers  ALP 
+
+mov ax,[1000h]
+mov bx,[1002h]
+sub ax,bx
+mov [2002h],ax
+
+
+mov bx,2222h ;register
+mov ax,bx
+mov cx,11h
+mov dx,cx
+mul dx
+mov [2004h],ax  
+
+
+mov bx,1007h   ;indirect
+mov ax,[bx]
+mov cx,85h
+div cx
+mov [2006h],ax
+
  
-## Output  
-## Multiplication alp 
- ## Output  
+RET
+````
+## program for logical operations:
+```
+org 100h
+MOV AX,1236H;
+MOV BX,1238H;
+AND AX,BX;
+MOV [2000H],AX;
 
 
-## Division alp 
+MOV AX,2022H;
+MOV BX,2024H;
+OR AX,BX;
+MOV [2002H],AX;
 
-## Output  
 
+
+MOV AX,1112H;
+NOT AX;
+MOV [2004],AX;
+
+
+MOV AX,014H;
+MOV BX,08H;
+XOR AX,BX;
+MOV [2006H],AX;
+
+ret
+```
+## Output for arithmetic operations:
+<img width="1917" height="1025" alt="image" src="https://github.com/user-attachments/assets/1d5eff35-c44e-4a07-b6a8-b57e0888f897" />
+
+## Output for logical operations:
+<img width="1917" height="1025" alt="image" src="https://github.com/user-attachments/assets/6279f05e-a37f-4920-97ce-c8284534ffb2" />
 
 ## Result :
- 
-
+Thus the program for ALP on fundamental arithmetic and logical operations using emu8086 was executed successfully.
 
 
 
